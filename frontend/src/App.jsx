@@ -1,15 +1,12 @@
-import React from "react"
-import Approutes from './Routes/Approutes.jsx'
-
-
+import React from "react";
+import Approutes from "./Routes/Approutes.jsx";
+import { UserProvider } from "./Context/UserContext.jsx"
 function App() {
-  
-
   return (
-   <>
-   <Approutes/>
-   </>
-  )
+    <UserProvider>
+      <Approutes />
+    </UserProvider>
+  );
 }
 
-export default App
+export default App;
